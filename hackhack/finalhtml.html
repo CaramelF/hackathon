@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letshego Sephiri - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="site-header">
+                <a href="#" class="site-title">Letshego Sephiri</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a onclick="openPopup('skills')">skills</a></li>
+                        <li><a onclick="openPopup('interests')">interests</a></li>
+                        <li><a onclick="openPopup('educational-background')">education</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#download-cv">cv</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
+            </div>
+        </header>
+
+        <div class="mobile-nav">
+            <button class="close-nav" aria-label="Close navigation">×</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a onclick="openPopup('skills')">Skills</a></li>
+                <li><a onclick="openPopup('interests')">Interests</a></li>
+                <li><a onclick="openPopup('educational-background')">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#download-cv">Download CV</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <section id="home" class="hero">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/me.jpg-6D0bMNRVfqRrZl5ZTXbYbByZE4Lsk8.jpeg" alt="Letshego Sephiri" class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">navigating my journey:<br>creativity & passion</h1>
+                <a href="#about" class="btn">discover more</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="download-cv" class="download-cv">
+            <h2>Download My CV</h2>
+            <p>Get a comprehensive overview of my skills, experience, and educational background by downloading my CV.</p>
+            <a href="https://docs.google.com/document/d/11OAjjdyBrMOY9vTuwu8-66yvCDIrsLzC/edit?usp=sharing&ouid=113794447750858247851&rtpof=true&sd=true" class="download-btn" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+            </a>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <img src="/images/me.jpg" alt="Letshego Sephiri" class="about-image">
+                <div class="about-text">
+                    <h3>Hello, I'm Letshego</h3>
+                    <p>I'm a passionate aspiring developer and designer with a love for creating beautiful, functional digital experiences. My journey in the world of web development began a year ago, and I've been honing my skills ever since.</p>
+                    <p> My journey into IT stems from my fascination with systems and how they function, whether in biology or technology.</p>
+                    <p>When I'm not coding, you can find me exploring new design trends, reading, or enjoying the outdoors. I believe in the power of simplicity and minimalism, both in design and in life.</p>
+                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to work together or just say hello!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="/images/code.jpg?height=400&width=600" alt="Project 1" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Web Development</h3>
+                        <p class="project-category">Learning how to create a webpage</p>
+                        <a href="https://github.com/PLP-WebTechnologies/feb-2025-introduction-to-html-5-CaramelF/tree/main" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/images/webdev.jpg?height=200&width=400" alt="Project 2" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Web development </h3>
+                        <p class="project-category">creating forms</p>
+                        <a href="https://github.com/PLP-WebTechnologies/feb-2025-advanced-html-CaramelF/tree/main" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/images/database.jpg?height=200&width=400" alt="Project 3" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Database</h3>
+                        <p class="project-category">creating tables and loading data</p>
+                        <a href="https://github.com/PLP-Database-Design/wk-2a-CaramelF/blob/main/answers.sql" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/images/python.jpg?height=400&width=600" alt="Project 4" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Python<h3>
+                        <p class="project-category">if else </p>
+                        <a href="https://github.com/CaramelF/PLP-Academy-PYTHON-WEEK2-ASSIGNMENT/tree/main" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-textarea" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Popup Overlays -->
+    <div id="skills-overlay" class="popup-overlay">
+        <div class="popup">
+            <span class="close" onclick="closePopup('skills')">&times;</span>
+            <h2>My Skills</h2>
+            <p>Technical Skills:
+                <br><br>    
+                Programming: HTML, Python
+                Web Development & Databases
+                IT Fundamentals & Networking (CompTIA A+, N+)
+                <br><br>
+                Soft Skills:
+                <br><br>
+                Leadership & Coordination
+                Teaching & Facilitation
+                Mentorship
+            </p>
+        </div>
+    </div>
+
+    <div id="educational-background-overlay" class="popup-overlay">
+        <div class="popup">
+            <span class="close" onclick="closePopup('educational-background')">&times;</span>
+            <h2>Educational Background</h2>
+            <p>Software Development Scholarship – PLP Academy (Ongoing)
+                <br><br> 
+                CompTIA A+ Certification (Completed)
+                <br><br>
+                CompTIA N+ Certification (In Progress)
+                <br><br>
+                Unfinished Degree in Physiology & Genetics – (University of The Free State)</p>
+        </div>
+    </div>
+
+    <div id="interests-overlay" class="popup-overlay">
+        <div class="popup">
+            <span class="close" onclick="closePopup('interests')">&times;</span>
+            <h2>My Interests</h2>
+            <p>I am naturally drawn to understanding how things work, from biological systems to complex software structures. 
+                This curiosity drives my passion for full-stack development, as I believe in convenience, efficiency, and seamless integration of technology. 
+                I am especially interested in AI and machine learning, recognizing their potential to revolutionize how applications function. 
+                Beyond tech, I enjoy creative problem-solving, continuously refining my work to achieve perfection.
+                This portfolio is the exhibition of having an idea and figuring it out until it looks how i had intended. 
+                My trajectory can only be phenomenal if this is my first step.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a onclick="openPopup('skills')">Skills</a></li>
+                        <li><a onclick="openPopup('interests')">Interests</a></li>
+                        <li><a onclick="openPopup('educational-background')">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#download-cv">Download CV</a></li>
+                    </ul>
+                </nav>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+                <p class="copyright">&copy; 2023 Letshego Sephiri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const closeNav = document.querySelector('.close-nav');
+        const overlay = document.querySelector('.overlay');
+
+        mobileNavToggle.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeNav.addEventListener('click', closeNavigation);
+        overlay.addEventListener('click', closeNavigation);
+
+        function closeNavigation() {
+            mobileNav.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close mobile nav when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeNavigation();
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                if (name && email && message) {
+                    alert('Thank you for your message! I will get back to you soon.');
+                    contactForm.reset();
+                } else {
+                    alert('Please fill in all fields.');
+                }
+            });
+        }
+
+        // Popup functionality
+        function openPopup(id) {
+            document.getElementById(`${id}-overlay`).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePopup(id) {
+            document.getElementById(`${id}-overlay`).classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close popup when clicking outside
+        document.querySelectorAll('.popup-overlay').forEach(overlay => {
+            overlay.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.popup-overlay').forEach(overlay => {
+                    overlay.classList.remove('active');
+                });
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>
